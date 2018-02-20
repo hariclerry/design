@@ -11,32 +11,32 @@
        
   
        
-        <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">WeConnect</a>
-                  </div>
-                 
-                  
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href=""><span class="glyphicon glyphicon-user"></span>User</a></li>
-                        <li><a href="index"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-                          </ul>
-                   <ul class="nav navbar-nav">
-            
-                      <li><a href="">Home</a></li>
-                      <li>
-                        <a href="new">Register Business</a>
-                      </li>
-                      <li>
-                        <a href="dashboard.html">Dasboard</a>
-                        </li>
-                      <li>
-                        <a href="businesses">All Businesses</a>
-                        </li>
-                    </ul>
-              </div>
-              </nav>>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WeConnect</a>
+      </div>
+     
+      
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><span class="glyphicon glyphicon-user"></span>User</a></li>
+            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+       <ul class="nav navbar-nav">
+
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="create.html">Register Business</a>
+          </li>
+          <li>
+            <a href="dashboard.html">Dasboard</a>
+            </li>
+          <li>
+            <a href="businesslist.html">All Businesses</a>
+            </li>
+        </ul>
+  </div>
+  </nav>>
     
                     <div class="container">
                        
@@ -47,9 +47,9 @@
                     
                           </div>
                          <hr>
-                         <form  action="{{url_for('main.search_businesses')}}" method="POST">
+                         <form  action="" method="POST">
                                 <div>
-                                  <div class="col-md-8 col-md-offset-2 eventsearch">
+                                  <div class="col-md-8 col-md-offset-2 businesssearch">
                                     <div class="input-group">
                                            <input type="text" class="form-control" placeholder="Type business category or location" name="search">
                                              <span class="input-group-btn">
@@ -78,7 +78,7 @@
                                   <td>Labongo</td>
                                   <td>
                                   
-                                        <a href="{{url_for('main.addreview', businessid =business['id'])}}" class="btn btn-info" role="button">Add Review</a>
+                                        <a href="review.html" class="btn btn-info" role="button">Add Review</a>
                                   </td>
 
                                  
@@ -91,7 +91,7 @@
                                     <td>Mukasa</td>
                                     <td>
                                     
-                                          <a href="{{url_for('main.addreview', businessid =business['id'])}}" class="btn btn-info" role="button">Add Review</a>
+                                          <a href="review.html" class="btn btn-info" role="button">Add Review</a>
                                     </td>
   
                                    
@@ -104,7 +104,7 @@
                                         <td>Clerry</td>
                                         <td>
                                         
-                                              <a href="{{url_for('main.addreview', businessid =business['id'])}}" class="btn btn-info" role="button">Add Review</a>
+                                              <a href="review.html" class="btn btn-info" role="button">Add Review</a>
                                         </td>
       
                                        
